@@ -1,7 +1,6 @@
 export default class ConnectFour {
   doStuff() {
-    console.log(`i'm about to do some shit!`);
-    console.log(`and then some!`);
+    console.log(`${this.constructor.name} is about to do some stuff!`);
     return { hi: "bye", bax: "baz", glug: "gluz" };
   }
 }

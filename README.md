@@ -18,7 +18,7 @@ This project should always pass a simple test.  EG `npm run test` should not gen
 
 ## ts-node
 
-This project should be usable from a simple console app via ts-node.  EG `npx ts-node foober.ts` should not generate errors, and in general, if you `import` the src file from a ts script and then run that script via `ts-node` it should work.
+This project should be usable from a simple console app/script via ts-node.  EG `npx ts-node foober.ts` should not generate errors, and in general, if you `import` the `src` folder from a ts script and then run that script via `ts-node` it should work.
 
 ## Use in other projects
 
