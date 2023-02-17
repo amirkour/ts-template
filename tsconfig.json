@@ -3,12 +3,33 @@
   "compilerOptions": {
     "baseUrl": "src",
     "outDir": "dist",
+    "rootDir": ".",
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "rootDir": ".",
+
+    // note: only need this on projects being referenced.
+    // make sure to read the docs!
     "composite": true
+
+    // when referencing external projects, you'll need to use
+    // "paths" if you wanna import absolute paths.
+    // eg:
+    // 🥳 import jquery from 'jquery'
+    // vs
+    // 🤢 import jquery from '../node_modules/jquery'
+    // gotta use a "paths" entry to achieve that first one🥳
+    // "paths": {
+    //   "name-of-root-import-you-want": ["path/of/project/src/relative/to/baseUrl/"]
+    // }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
+
+  // to reference/share other projects, use "references".
+  // the path has to point to the tsconfig.json of the project
+  // being referenced.
+  // make sure to read the docs! there's a whole page on this
+  //   "references": [{ "path": "path/to/tsconfig/of/project/being/referenced" }]
 }
+
